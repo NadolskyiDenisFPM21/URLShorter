@@ -1,0 +1,201 @@
+*{
+    background-color: aliceblue;
+    a {
+        all: unset;
+        cursor: pointer;
+    }
+}
+
+header > h1 {
+    text-align: center;
+    color: #101053;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead, tbody {
+    background-color: #007BFF;
+    color: #101053;
+    text-align: center;
+
+}
+
+thead tr td {
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+    transform: scale(1.05); /* Легке збільшення кнопки при наведенні */
+}
+
+button:active {
+    background-color: #003f7f;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.6);
+}
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.pagination .active a {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination .disabled a {
+    background-color: #f2f2f2;
+    color: #ccc;
+    pointer-events: none;
+}
+
+.pagination .previous, .pagination .next {
+    font-weight: bold;
+}
+
+.pagination .previous a, .pagination .next a {
+    padding: 8px 15px;
+}
+
+
+form#add-url-form {
+    width: 100%;
+    max-width: 620px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form#add-url-form p {
+    margin-bottom: 15px;
+}
+
+form#add-url-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form#add-url-form input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form#add-url-form input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+form#add-url-form button[type="submit"] {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 200px;
+    margin: auto;
+}
+
+form#add-url-form button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+form#add-url-form button[type="submit"]:active {
+    background-color: #003f7f;
+}
